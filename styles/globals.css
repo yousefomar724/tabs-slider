@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* text-align: center;
+  font-size: 18px;
+  background: #fff;
+  color: red;
+  height: 100vh !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+}
+
+.swiper-slide img {
+  /* display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; */
+}
+
+/* sticky inset-x-0 top-0 z-100 flex flex-row-reversee justify-around transition-all shadow-sm dark:shadow-none bg-white dark:bg-gray-700 */
+.swiper-pagination {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 0.5rem !important;
+  overflow: auto !important;
+  width: 100% !important;
+  height: fit-content;
+  z-index: 100 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+.swiper-pagination-bullet {
+  padding: 0.7rem 1.5rem !important;
+  height: 2.5rem !important;
+  margin: 1rem 0 !important;
+  width: auto !important;
+  white-space: nowrap;
+  border-radius: 10000px !important;
+  background-color: lightgray !important;
+  display: flex !important;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer !important;
+  opacity: 1 !important;
+  font-size: small;
+}
+.swiper-pagination-bullet:first-of-type {
+  margin-right: 1rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff !important;
+}
